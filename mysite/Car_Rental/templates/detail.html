@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html  lang="pl">
+    <head>
+        
+        {% load static %}
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="{% static 'css/detail.css' %}" media="screen">
+        <script>
+            function confirmAction() {
+                var date_from = document.getElementById("date_from").value;
+                var date_to = document.getElementById("date_to").value;
+                let confirmAction = confirm("Are you sure to rent {{cars.name}} from "+date_from+" to "+date_to);
+                if (confirmAction) {
+                alert("Action successfully executed");
+                } else {
+                alert("Action canceled");
+                }
+            }
+            setTimeout(() => {
+            const box = document.getElementById('hide');
+            box.style.display = 'none';
+            }, 7000);
+        </script>
+    </head>
+    <nav>
+        <div id="nav">
+            <div class="topnav">
+                <a href="/" class="home link_decorate"><img src="{% static 'images/home_icon.png'%}"></a>
+                <a href="#logo" class="logo link_decorate"> <img width="150px" height="150px"src="{% static 'images/sport_car.png'%}"></a>
+                <a href="/gallery" class="page_element_1 link_decorate">Cars</a>
+                <a href="/forum" class="page_element_2 link_decorate">Forum</a>
+                <a href="/account" class="account_log link_decorate"><img width="50px" height="50px"src="{% static 'images/user_icon.png'%}"></a>
+
+            </div>
+        </div>
+    </nav> 
+	<div id="wrapper">
+        <br>
+        <br>
+        <br>
+        {% if messages %}
+            {% for message in messages %}
+                <div id="hide" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }} </div>
+            {% endfor %}
+        {% endif %} 
+        <div class="menu">
+
+            <div class="name">
+                <h1> {{cars.name}}</h1>
+            </div>
+            <img class="image" src="../../static{{cars.photo.url}}">
+            <div class="under_image_left">
+                <br>
+                {{details.model}}
+            </div>
+            <div class="under_image_middle">
+                <br>
+                {{details.car_type}}
+            </div>
+            <div class="under_image_right">
+                <br>
+                {{details.price_for_day}}$/day
+            </div>
+            <div class="right_side">
+                <p class="description"> {{details.description}}</p>
+            </div>
+            <div class="forms">
+                <form method="post">
+                    {% csrf_token %}
+                    <span class="date_from_label">From </span>
+                    <input type="date" class="date_from" name="date_from" id="date_from">
+                    <br>
+                    <br>
+                    <span class="date_to_label">To </span>
+                    <input type="date" class="date_to" name="date_to" id="date_to">
+                    <select class="available_dates" size="1">
+                        <option> AVAILABLE DATES</option>
+                        {% for key, value in available_dates.items %}
+                            <option> {{ value }}</option>
+                        {% endfor %}
+                    </select>
+                    <input type="submit" class="submit" value="RENT NOW" onclick="confirmAction()">
+
+                </form>
+            </div>
+        </div>
+        
+    </div>
+	</body>
+</html>
+
+
+

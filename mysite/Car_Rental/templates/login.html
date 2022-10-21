@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html  lang="pl">
+
+    {% load static %}
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="stylesheet"  type="text/css" href="{% static 'css/login.css' %}" media="screen">
+        <script>
+            setTimeout(() => {
+            const box = document.getElementById('hide');
+            box.style.display = 'none';
+            }, 7000);
+        </script>
+    </head>
+	<body>
+        <nav>
+            <div id="nav">
+                <div class="topnav">
+                    <a href="/" class="home link_decorate"><img src="{% static 'images/home_icon.png'%}"></a>
+                    <a href="#logo" class="logo link_decorate"> <img width="150px" height="150px"src="{% static 'images/sport_car.png'%}"></a>
+                    <a href="/gallery" class="page_element_1 link_decorate">Cars</a>
+                    <a href="/forum" class="page_element_2 link_decorate">Forum</a>
+                    <a href="/account" class="account_log link_decorate"><img width="50px" height="50px"src="{% static 'images/user_icon.png'%}"></a>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        {% if messages %}
+            {% for message in messages %}
+                <div id="hide" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }} </div>
+            {% endfor %}
+        {% endif %} 
+	<div id="wrapper">
+        <div class="card">
+            <span class="title">
+                <h5> Login </h5>
+            </span>
+            <form method="post">
+                {% csrf_token %}
+                <span class="username_label"> Enter your username</span> <br>
+                <input type="text" class="username" name="username" required>
+                <span class="password_label"> Enter your password</span>
+                <input type="password" class="password" name="password" required>
+                <span class="account"> You don't have account yet? <a href="/accounts/register"> Click here </a></span>
+                <span class="remember"> You don't remember password?<a href="/accounts/password_reset"> Click here </a></span>
+                <input type="submit" class="button" value="Login">
+            </form>
+        </div>
+    </div>
+	</body>
+</html>

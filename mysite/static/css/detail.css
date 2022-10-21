@@ -1,0 +1,350 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+    background-color:#181819;
+    margin: 0px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+#nav{
+    width: 100%;
+    height: 30px;
+    margin: 3% auto;
+}
+
+.topnav {
+
+    background-color: none;
+    width: 80%;
+    left: 10%;
+    height: 50px;
+    position: absolute;
+    
+  }
+  
+.link_decorate{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+a:hover{
+
+    color:#B22222;
+}
+  
+
+.home{
+    left: 90%;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    height: 50px;
+    width: 70px;
+    opacity: 100% !important;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.logo{
+    left: 0%;
+    display: block;
+    position: absolute;
+    bottom: -100px;
+}
+
+.page_element_1{
+    left: 35%;
+    display: block;
+    position: absolute;
+    font-size: 25px;
+    width: 70px;
+    height: 30px;
+    background-color: #181819;
+    text-align: center;
+    border-radius: 5px;
+    color: aliceblue;
+    opacity: 82%;
+} 
+
+
+.page_element_2{
+    left: 50%;
+    display: block;
+    position: absolute;
+    font-size: 25px;
+    width: 70px;
+    height: 30px;
+    background-color: #181819;
+    text-align: center;
+    border-radius: 5px;
+    color: aliceblue;
+    opacity: 82%;
+} 
+
+.account_log{
+    left: 100%;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    height: 50px;
+    width: 70px;
+    opacity: 100% !important;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+} 
+
+
+
+
+#wrapper{
+
+    width: 100%;
+    margin: 50px auto;
+    height: auto;
+}
+
+div {
+    display: block;
+}
+
+.menu{
+    width: 100%;
+    height: 520px;
+    position: relative;
+    top: 0px;
+    background-color:aliceblue;
+    opacity: 82%;
+}
+
+
+.name{
+    width: 100%;
+    height:80px;
+    position: absolute;
+    color:#B22222;
+    text-align: center;
+} 
+
+.image{
+    background-color: blue;
+    top: 62px;
+    height: 300px;
+    width: 500px;
+    margin: 18px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+    left: 15px;
+}
+
+.under_image_left{
+    width: 220px;
+    height:50px;
+    position: absolute;
+    background-color: #181819;
+    color:#B22222 ;
+    text-align: center;
+    top: 400px;
+    margin: 18px;
+    left: 15px;
+    border-radius: 5px;
+    line-height: 16px;
+}
+.under_image_middle{
+    width: 140px;
+    height:50px;
+    position: absolute;
+    background-color:#B22222;
+    color: aliceblue;
+    text-align: center;
+    top: 400px;
+    margin: 18px;
+    left: 250px;
+    border-radius: 5px;
+    line-height: 16px;
+}
+
+.under_image_right{
+    width: 110px;
+    height:50px;
+    position: absolute;
+    background-color:#04fc84;
+    color:#181819;
+    text-align: center;
+    top: 400px;
+    margin: 18px;
+    left: 405px;
+    border-radius: 5px;
+    line-height: 16px;
+}
+
+.right_side{
+    width: 45%;
+    height:300px;
+    position: absolute;
+    background-color: none;
+    left: 50%;
+    top: 80px;
+}
+
+.description{
+    position: absolute;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 90%;
+    height:300px;
+    left: 5%;
+    right: 5%;
+    font-weight: 400;
+}
+
+.forms{
+
+    width: 48%;
+    height:100px;
+    position: absolute;
+    top: 370px;
+    left: 50%;
+    background-color: #181819;
+    border-radius: 10px;
+}
+
+.date_from_label{
+    position: absolute;
+    left: 4%;
+    margin: 10px;
+    color: aliceblue;
+    font-size: 21px;
+    font-weight: 600;
+
+}
+
+.date_from{
+    position: absolute;
+    left: 16%;
+    margin: 10px;
+    padding: 5px;
+    background-color:#B22222;
+    border: none;
+    border-radius:5px;
+}
+
+.date_to_label{
+    position: absolute;
+    left: 4%;
+    margin: 10px;
+    color: aliceblue;
+    font-size: 21px;
+    font-weight: 600;
+
+}
+
+.date_to{
+    position: absolute;
+    left: 16%;
+    margin: 10px;
+    padding: 5px;
+    background-color:#B22222;
+    color: #181819;
+    border: none;
+    border-radius:5px;
+
+}
+.available_dates{
+    position: absolute;
+    width: 24%;
+    height: 50px;
+    background-color:aliceblue;
+    font-weight: 600; 
+    border: none;
+    top: 25%;
+    left: 40%;
+    border-radius: 5px;
+    text-align: left;
+    color: #B22222;
+}
+
+select option {
+    margin: 40px;
+    font-size: 16px;
+    color: #B22222;
+}
+
+
+.submit{
+    width: 180px;
+    height:50px;
+    position: absolute;
+    background-color: #04fc84;
+    color: #181819;
+    text-align: center;
+    top: 5px;
+    margin: 18px;
+    left: 64%;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.submit_not{
+    width: 180px;
+    height:50px;
+    position: absolute;
+    background-color: #ff605c;
+    color: #181819;
+    text-align: center;
+    top: 0px;
+    margin: 18px;
+    left: 55%;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+p::first-letter {
+    font-size: 200%;
+    color: #B22222;
+  }
+
+::-webkit-scrollbar {
+    width: 16px;
+    background-color: #B22222;
+}
+  
+::-webkit-scrollbar-track {
+    border-radius: 100px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: 	aliceblue;
+    border-radius: 100px;
+}
+
+.error{
+    width: 100%;
+    height: auto;
+    background-color: #ff605c;
+    color: aliceblue;
+    text-align: center;
+    font-size: 29px;
+}
+
+.INFO{
+    width: 100%;
+    height: auto;
+    background-color: #ff605c;
+    color: aliceblue;
+    text-align: center;
+    font-size: 29px;
+}
+
