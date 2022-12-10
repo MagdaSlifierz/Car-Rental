@@ -1,4 +1,4 @@
-# Car-RentalHi, 
+# Car-Rental
 
 This is my Rental Car project. The last few months I gained the knowlage of Python and Django Framework. I decided to create the app, whete I use my knowladge and improve my skills. 
 
