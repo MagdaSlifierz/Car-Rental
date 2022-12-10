@@ -1,4 +1,4 @@
-#Car-Rental Fullstack app
+** Car-Rental Fullstack app**
 
 
 Project containts a specific topics as:
@@ -15,7 +15,7 @@ Project containts a specific topics as:
 - payments with recharging users accounts
 
 
-PAGES
+**PAGES**
 
 REGISTER PAGE on 75% size image
 ![image](https://user-images.githubusercontent.com/49603115/206865144-d1c46f0a-31db-4d31-b490-5391dbd01975.png)
@@ -25,7 +25,6 @@ LOGIN PAGE
 
 USER ACCOUNT
 ![image](https://user-images.githubusercontent.com/49603115/206865193-4e404a01-c982-4b4f-b370-9e6e9f40d4d7.png)
-
 
 PAYMENT SESSION
 ![image](https://user-images.githubusercontent.com/49603115/206865228-6b37726b-c3b2-463a-8282-d1416583d172.png)
@@ -49,7 +48,7 @@ PAGE WITH TOKEN TO SET PASSWORD
 ![Uploading image.png…]()
 
 
-**GET OWN API KEY FROM:
+**GET OWN API KEY FRO**M:
 
 - https://stripe.com/en-pl
 - https://mailtrap.io/
